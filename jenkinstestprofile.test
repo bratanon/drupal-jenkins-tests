@@ -29,6 +29,6 @@ class JenkinsTestProfileTestCase extends DrupalWebTestCase {
   function testDemo() {
     $this->drupalLogin($this->account);
     $this->assertResponse(200);
-    //$this->fail('Could not blablabla..');
+    $this->fail('Could not blablabla..');
   }
 }
