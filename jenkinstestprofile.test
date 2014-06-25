@@ -1,0 +1,34 @@
+<?php
+/**
+ * @file
+ */
+
+/**
+ *
+ */
+class JenkinsTestProfileTestCase extends DrupalWebTestCase {
+  protected $account;
+  
+  public static function getInfo() {
+    // Note: getInfo() strings are not translated with t().
+    return array(
+      'name' => 'Demo test',
+      'description' => 'Demo for jenkins',
+      'group' => 'Demo',
+    );
+  }
+
+  /**
+   * Overrides parent::setUp();
+   */
+  function setUp() {
+    parent::setUp();
+    $this->account = $this->drupalCreateUser();
+  }
+
+  function testDemo() {
+    $this->drupalLogin($this->account);
+    $this->assertResponse(200);
+    //$this->fail('Could not blablabla..');
+  }
+}

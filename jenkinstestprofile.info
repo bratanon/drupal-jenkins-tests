@@ -1,0 +1,8 @@
+name = Jenkins test profile
+description = Tests how to run tests in jenkins
+version = 1
+core = 7.x
+dependencies[] = simpletest
+dependencies[] = admin_menu
+; Files
+files[] = jenkinstestprofile.test
