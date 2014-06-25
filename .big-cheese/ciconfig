@@ -1,0 +1,5 @@
+profile = jenkinstestprofile
+root = web
+
+server_uri = ci.stjerneman.com
+notify_aegir = yes
